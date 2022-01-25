@@ -87,6 +87,7 @@ section.prodigy {
         position: absolute;
         bottom: .2em;
         width: 2em;
+        animation: moveArrow 1s alternate-reverse infinite;
     }
 }
 
@@ -137,4 +138,13 @@ section.prodigy {
               justify-self: left;
           }
       }
+}
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }

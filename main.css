@@ -94,6 +94,7 @@ section.prodigy .down-arrow {
   position: absolute;
   bottom: .2em;
   width: 2em;
+  animation: moveArrow 1s alternate-reverse infinite;
 }
 
 .explore img {
@@ -146,5 +147,27 @@ section.prodigy .down-arrow {
   width: 25em;
   -ms-grid-column-align: left;
       justify-self: left;
+}
+
+@-webkit-keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
